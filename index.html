@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maquettes — ton application de courses (à valider)</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 17px; line-height: 1.55; color: #1d2430; margin: 0; padding: 16px; background: #ffffff; }
+  h1 { font-size: 24px; color: #0f3d6e; margin: 0 0 4px 0; line-height: 1.2; }
+  .sous-titre { color: #5b6573; margin: 0 0 16px 0; }
+  h2 { font-size: 20px; color: #0f3d6e; border-bottom: 1.5px solid #0f3d6e; padding-bottom: 4px; margin: 28px 0 12px 0; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 8px 0 12px 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  .encadre { background: #f3f6fa; border-left: 5px solid #0f3d6e; padding: 12px 14px; margin: 14px 0; border-radius: 4px; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0 16px 0; font-size: 15px; }
+  th, td { border: 1px solid #c4ccd6; padding: 8px 9px; text-align: left; vertical-align: top; }
+  th { background: #e8eef5; }
+  /* ---- Maquettes ---- */
+  .maquette { width: 100%; max-width: 340px; margin: 18px auto 6px auto; border: 2px solid #8a97a6; border-radius: 18px; overflow: hidden; background: #ffffff; box-shadow: 0 3px 10px rgba(15,61,110,.12); }
+  .mq-barre { background: #e8eef5; padding: 6px 12px; font-size: 12px; color: #5b6573; display: flex; justify-content: space-between; }
+  .mq-titre { background: #0f3d6e; color: white; padding: 10px 12px; font-size: 16px; font-weight: bold; }
+  .mq-corps { padding: 10px 12px 14px 12px; }
+  .mq-carte { border: 1px solid #c4ccd6; border-radius: 8px; padding: 8px 10px; margin: 8px 0; font-size: 14px; background: #fbfcfe; }
+  .mq-carte .ligne1 { font-weight: bold; }
+  .badge { display: inline-block; border-radius: 6px; padding: 1px 8px; font-size: 12px; margin-right: 4px; white-space: nowrap; }
+  .badge.nuit { background: #e5e9f7; color: #2b3a67; }
+  .badge.suppl { background: #e6f4ea; color: #1e6b3a; }
+  .badge.etat { background: #eef1f5; color: #5b6573; }
+  .mq-btn { background: #0f3d6e; color: white; border-radius: 8px; padding: 10px 12px; font-size: 15px; text-align: center; margin: 8px 0; }
+  .mq-btn.clair { background: #e8eef5; color: #0f3d6e; border: 1.5px solid #0f3d6e; }
+  .mq-bulle { border: 1px solid #c4ccd6; border-radius: 10px; padding: 8px 10px; margin: 8px 0; font-size: 13.5px; background: #f3f6fa; }
+  .mq-bulle .qui { font-weight: bold; color: #0f3d6e; font-size: 13px; }
+  .mention { text-align: center; font-size: 12.5px; color: #9a5b00; margin: 4px 0 22px 0; max-width: 340px; margin-left: auto; margin-right: auto; }
+  .num-etape { display: inline-block; background: #0f3d6e; color: white; border-radius: 50%; width: 26px; height: 26px; text-align: center; font-size: 14px; line-height: 26px; margin-right: 6px; }
+</style>
+</head>
+<body>
+
+<h1>Ton application de courses</h1>
+<p class="sous-titre">Les maquettes de travail — réponds juste : <b>« oui, c'est ça »</b> ou dis ce qui ne va pas.</p>
+
+<div class="encadre">
+<b>Ce que tu vois ici</b> : de fausses interfaces, faites pour te montrer <b>comment ça marchera</b>. Ce n'est pas le rendu final — l'application définitive aura un autre aspect. Regarde surtout le <b>fonctionnement</b> : qui fait quoi, dans quel ordre.
+</div>
+
+<h2>Le fonctionnement, en 6 étapes</h2>
+<p><span class="num-etape">1</span>Le SMS de l'ambulancier arrive sur ton téléphone et est <b>copié automatiquement</b> dans l'application.</p>
+<p><span class="num-etape">2</span>L'application <b>découpe la liste</b> : une course par ligne, avec l'adresse du patient. Chaque ligne est marquée <b>« lu par IA, à vérifier »</b> — tu corriges d'un geste si besoin.</p>
+<p><span class="num-etape">3</span>Tu <b>gardes</b> tes courses ⭐ (nuit, suppléments, longs trajets — repérés pour toi), et tu <b>proposes</b> les autres.</p>
+<p><span class="num-etape">4</span>Les messages sont préparés par cercles : <b>SMS avec le nom</b> pour tes 3-4 confiances, <b>WhatsApp sans nom de famille</b> pour les groupes (tu publies d'un geste).</p>
+<p><span class="num-etape">5</span>Les réponses <b>SMS</b> arrivent classées par ordre d'arrivée. Les réponses des <b>groupes WhatsApp</b>, tu les vois dans WhatsApp — tu touches le nom du premier pour lui attribuer la course.</p>
+<p><span class="num-etape">6</span>Les deux messages se préparent : la fiche au chauffeur, et « ok » ou « ok xx min » à l'ambulancier — <b>jamais le nom du chauffeur</b>.</p>
+
+<h2>Écran 1 — Aujourd'hui</h2>
+<div class="maquette">
+  <div class="mq-barre"><span>9:41</span><span>simulation</span></div>
+  <div class="mq-titre">📥 Aujourd'hui — 3 courses à trier</div>
+  <div class="mq-corps">
+    <div class="mq-carte">
+      <div class="ligne1">6h45 — M. G <span class="badge nuit">🌙 tarif de nuit</span></div>
+      <div>Sevran, aller-retour — rdv 8h</div>
+      <div style="font-size:12.5px;color:#5b6573">Avec accompagnateur — lu par IA, à vérifier</div>
+    </div>
+    <div class="mq-carte">
+      <div class="ligne1">11h — M. A</div>
+      <div>St Antoine, aller-retour — rdv 13h</div>
+    </div>
+    <div class="mq-carte">
+      <div class="ligne1">16h30 — M. D <span class="badge suppl">🌟 supplément</span></div>
+      <div>Coulommiers, retour — hôpital de jour</div>
+    </div>
+    <div class="mq-btn">Garder mes courses ⭐</div>
+    <div class="mq-btn clair">Proposer les autres →</div>
+  </div>
+</div>
+<p class="mention">⚠️ Interface de travail (simulation) — l'interface finale ne sera pas comme ça. Ceci sert uniquement à montrer le fonctionnement.</p>
+
+<h2>Écran 2 — Proposer une course</h2>
+<div class="maquette">
+  <div class="mq-barre"><span>9:41</span><span>simulation</span></div>
+  <div class="mq-titre">📲 Proposer — M. A, 11h St Antoine</div>
+  <div class="mq-corps">
+    <div class="mq-bulle"><div class="qui">Cercle 1 — SMS à tes chauffeurs de confiance</div>
+    « Bonjour, 11h M. A, A/R St Antoine, rdv 13h. Qui peut prendre ? »</div>
+    <div class="mq-btn">Envoyer les SMS →</div>
+    <div class="mq-bulle"><div class="qui">Cercle 2 — message WhatsApp pour ton groupe</div>
+    « 11h A/R St Antoine, rdv 13h. Réponses par SMS. »</div>
+    <div class="mq-btn clair">Partager dans WhatsApp →</div>
+    <div style="font-size:12.5px;color:#5b6573">WhatsApp s'ouvre avec le texte déjà tapé : tu choisis le groupe et tu appuies sur envoyer.</div>
+  </div>
+</div>
+<p class="mention">⚠️ Interface de travail (simulation) — l'interface finale ne sera pas comme ça. Ceci sert uniquement à montrer le fonctionnement.</p>
+
+<h2>Écran 3 — Qui a pris la course</h2>
+<div class="maquette">
+  <div class="mq-barre"><span>9:41</span><span>simulation</span></div>
+  <div class="mq-titre">✅ Qui a pris la course ?</div>
+  <div class="mq-corps">
+    <div class="mq-carte"><div class="ligne1">🥇 Karim — « je prends, 10 min » <span class="badge etat">18h34</span></div></div>
+    <div class="mq-carte"><div class="ligne1">🥈 Sofiane — « 20 min » <span class="badge etat">18h36</span></div></div>
+    <div class="mq-btn">Choisir Karim</div>
+  </div>
+</div>
+<p class="mention">⚠️ Interface de travail (simulation) — l'interface finale ne sera pas comme ça. Ceci sert uniquement à montrer le fonctionnement.</p>
+
+<h2>Écran 4 — Les deux messages préparés</h2>
+<div class="maquette">
+  <div class="mq-barre"><span>9:41</span><span>simulation</span></div>
+  <div class="mq-titre">📨 Messages prêts à envoyer</div>
+  <div class="mq-corps">
+    <div class="mq-bulle"><div class="qui">Pour Karim (SMS)</div>
+    « M. A, tél. 06…, 11h A/R St Antoine, rdv 13h. Appelle le client pour donner ton délai. »</div>
+    <div class="mq-bulle"><div class="qui">Pour l'ambulancier (SMS)</div>
+    « ok 10 min »</div>
+    <div class="mq-btn">Envoyer les deux messages</div>
+  </div>
+</div>
+<p class="mention">⚠️ Interface de travail (simulation) — l'interface finale ne sera pas comme ça. Ceci sert uniquement à montrer le fonctionnement.</p>
+
+<h2>Le résumé</h2>
+<table>
+<tr><th>Tout seul</th><th>À un geste de toi</th></tr>
+<tr><td>Copier chaque SMS dans l'application</td><td>Garder ou non une course</td></tr>
+<tr><td>Découper en courses et rattacher les adresses</td><td>Publier dans les groupes WhatsApp</td></tr>
+<tr><td>Repérer les courses intéressantes</td><td>Choisir le chauffeur qui prend la course</td></tr>
+<tr><td>Préparer le SMS au chauffeur et la réponse à l'ambulancier</td><td>Valider ces deux messages</td></tr>
+<tr><td><i>Option réglable par toi :</i> envoyer le SMS à tes confiances après un délai de ton choix (15 min par ex.)</td><td>—</td></tr>
+</table>
+
+<div class="encadre">
+<b>👉 Ta réponse attendue :</b><br>
+• « <b>Oui, c'est ça</b> » — et on passe à la construction.<br>
+• Ou dis ce qui ne va pas, ou ce qui manque — par vocal si tu préfères.
+</div>
+
+<p style="font-size:13px;color:#5b6573">Maquettes de travail du 7 octobre 2026 — aucun compte, aucune donnée réelle sur cette page.</p>
+
+</body>
+</html>
